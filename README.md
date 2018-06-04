@@ -6,16 +6,16 @@ Share Social , Sending Simple Data to Other Apps
 ## Getting started
 
 ### Mostly automatic install
-1. `npm install react-native-share --save`
+1. `npm install wcchimiiz-react-native-social-share --save`
 2. `react-native link`
 
 ### Manual install
 <details>
 <summary> iOS</summary>
 
-1. `npm install react-native-share --save`
+1. `npm install wcchimiiz-react-native-social-share --save`
 2. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-3. Go to `node_modules` ➜ `react-native-share` ➜ `ios` and add `RNShare.xcodeproj`
+3. Go to `node_modules` ➜ `wcchimiiz-react-native-social-share` ➜ `ios` and add `RNShare.xcodeproj`
 4. In XCode, in the project navigator, select your project. Add `libRNShare.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 5. In XCode, in the project navigator, select your project. Add `Social.framework` and `MessageUI.framework` to your project's `General` ➜ `Linked Frameworks and Libraries`
 6. In file Info.plist, add
@@ -34,21 +34,21 @@ Share Social , Sending Simple Data to Other Apps
 <details>
 <summary> Android</summary>
 
-1. `npm install react-native-share --save`
+1. `npm install wcchimiiz-react-native-social-share --save`
 2. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import cl.json.RNSharePackage;` to the imports at the top of the file
   - Add `new RNSharePackage()` to the list returned by the `getPackages()`
     method
 3. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-share'
-  	project(':react-native-share').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-share/android')
+  	include ':wcchimiiz-react-native-social-share'
+  	project(':wcchimiiz-react-native-social-share').projectDir = new File(rootProject.projectDir, 	'../node_modules/wcchimiiz-react-native-social-share/android')
   	```
 4. Insert the following lines inside the dependencies block in
    `android/app/build.gradle`:
 
     ```
-      compile project(':react-native-share')
+      compile project(':wcchimiiz-react-native-social-share')
     ```
 5. Follow this
    [guide](https://developer.android.com/training/secure-file-sharing/setup-sharing.html).
@@ -87,7 +87,7 @@ Share Social , Sending Simple Data to Other Apps
   - For example: Replace the `com.example.yourappidhere` below with the
     `applicationId` that is defined in your `android/app/build.gradle`. It must
     be [hard-coded here to work
-    properly](https://github.com/EstebanFuentealba/react-native-share/issues/200#issuecomment-361938532).
+    properly](https://github.com/WCChimiiz/react-native-social-share/issues/200#issuecomment-361938532).
 
     ```
     import cl.json.ShareApplication
@@ -119,8 +119,8 @@ Share Social , Sending Simple Data to Other Apps
     
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. `npm install react-native-share --save`
-2. In Visual Studio add the `RNShare.sln` in `node_modules/react-native-share/windows/RNShare.sln` folder to their solution, reference from their app.
+1. `npm install wcchimiiz-react-native-social-share --save`
+2. In Visual Studio add the `RNShare.sln` in `node_modules/wcchimiiz-react-native-social-share/windows/RNShare.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using Cl.Json.RNShare;` to the usings at the top of the file
   - Add `new RNSharePackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -195,7 +195,7 @@ import {
   AlertIOS,
   Platform
 } from 'react-native';
-import Share, {ShareSheet, Button} from 'react-native-share';
+import Share, {ShareSheet, Button} from 'wcchimiiz-react-native-social-share';
 
 class TestShare extends Component {
   constructor(props) {
