@@ -21,13 +21,13 @@
     "react native facebook",
     "react native twitter"
   ],
-  "homepage": "https://github.com//WCChimiiz/react-native-social-share",
+  "homepage": "https://github.com/WCChimiiz/react-native-share",
   "bugs": {
-    "url": "https://github.com/WCChimiiz/react-native-social-share/issues"
+    "url": "https://github.com/WCChimiiz/react-native-share/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WCChimiiz/react-native-social-share.git"
+    "url": "git+https://github.com/WCChimiiz/react-native-share.git"
   },
   "scripts": {},
   "_npmUser": {
