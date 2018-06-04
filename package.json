@@ -1,17 +1,39 @@
 {
-  "name": "react-native-share",
-  "description": "Social Share, Sending Simple Data to Other Apps",
-  "version": "1.0.27",
+  "name": "wcchimiiz-react-native-social-share",
+  "version": "0.0.2",
+  "description": "Use the iOS native Twitter and Facebook share view from react native",
+  "author": {
+    "name": "Wiwat Patanaprasitchai",
+    "email": "wc.chimiiz@gmail.com"
+  },
+  "keywords": [
+    "react",
+    "twitter",
+    "facebook",
+    "SLComposeViewController",
+    "RCTBridgeModule",
+    "Social",
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "mobile",
+    "ui",
+    "react native facebook",
+    "react native twitter"
+  ],
+  "homepage": "https://github.com//WCChimiiz/react-native-social-share",
+  "bugs": {
+    "url": "https://github.com/WCChimiiz/react-native-social-share/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EstebanFuentealba/react-native-share.git"
+    "url": "git+https://github.com/WCChimiiz/react-native-social-share.git"
   },
-  "keywords": ["react-component", "react-native", "android", "ios", "windows"],
-  "nativePackage": true,
-  "author": {
-    "name": "Esteban Fuentealba",
-    "email": "efuentealba@json.cl"
+  "scripts": {},
+  "_npmUser": {
+    "name": "wcchimiiz",
+    "email": "wc.chimiiz@gmail.com"
   },
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "main": "react-native-social-share.js"
 }
