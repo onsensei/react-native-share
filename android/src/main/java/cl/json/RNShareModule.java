@@ -22,6 +22,7 @@ import cl.json.social.ShareIntent;
 import cl.json.social.TwitterShare;
 import cl.json.social.WhatsAppShare;
 import cl.json.social.InstagramShare;
+import cl.json.social.LineShare;
 
 public class RNShareModule extends ReactContextBaseJavaModule {
 
@@ -33,6 +34,7 @@ public class RNShareModule extends ReactContextBaseJavaModule {
         sharesExtra.put("generic", new GenericShare(this.reactContext));
         sharesExtra.put("facebook", new FacebookShare(this.reactContext));
         sharesExtra.put("twitter", new TwitterShare(this.reactContext));
+        sharesExtra.put("line", new LineShare(this.reactContext));
         sharesExtra.put("whatsapp",new WhatsAppShare(this.reactContext));
         sharesExtra.put("instagram",new InstagramShare(this.reactContext));
         sharesExtra.put("googleplus",new GooglePlusShare(this.reactContext));
