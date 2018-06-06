@@ -19,14 +19,15 @@
         NSLog(@"Try open view");
         NSString *message = [RCTConvert NSString:options[@"message"]];
         message = [message stringByAppendingString: [@" " stringByAppendingString: options[@"url"]] ];
-        message = (NSString*)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef) message, NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8));
         
-        NSString * urlString = [NSString stringWithFormat:@"line://msg/text/?{%@}", message ];
+        NSString * urlString = [NSString stringWithFormat:@"line://msg/text/?%@", message ];
+        NSLog(urlString);
         NSURL * shareURL = [NSURL URLWithString:urlString];
-        NSLog(shareURL);
+        NSString* webStringURL = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSURL* url = [NSURL URLWithString:webStringURL];
         
-        if ([[UIApplication sharedApplication] canOpenURL: shareURL]) {
-            [[UIApplication sharedApplication] openURL: shareURL];
+        if ([[UIApplication sharedApplication] canOpenURL: url]) {
+            [[UIApplication sharedApplication] openURL: url];
             successCallback(@[]);
         } else {
             // Cannot open email
