@@ -27,6 +27,11 @@ public class LineShare extends SingleShareIntent {
     }
 
     @Override
+    protected String getDefaultWebLink() {
+        return null;
+    }
+
+    @Override
     protected String getPlayStoreLink() {
         return null;
     }
