@@ -78,18 +78,18 @@
 		B33C22801D43F9B0006BCD98 /* social */ = {
 			isa = PBXGroup;
 			children = (
-				1EEC9F0220C67854006EB786 /* LineShare.m */,
 				1EEC9F0420C67863006EB786 /* LineShare.h */,
-				CE0C76361E9E7DE100ED396E /* InstagramShare.m */,
+				1EEC9F0220C67854006EB786 /* LineShare.m */,
 				CE0C76621E9E869300ED396E /* InstagramShare.h */,
-				B33C22841D441713006BCD98 /* GenericShare.m */,
+				CE0C76361E9E7DE100ED396E /* InstagramShare.m */,
 				B33C22861D441723006BCD98 /* GenericShare.h */,
+				B33C22841D441713006BCD98 /* GenericShare.m */,
 				B33C22871D4419DA006BCD98 /* WhatsAppShare.h */,
 				B33C22881D4419E8006BCD98 /* WhatsAppShare.m */,
-				B33C228A1D442576006BCD98 /* EmailShare.m */,
 				B33C228C1D442583006BCD98 /* EmailShare.h */,
-				B3EEE48D1D4844E7008422B6 /* GooglePlusShare.m */,
+				B33C228A1D442576006BCD98 /* EmailShare.m */,
 				B3EEE48F1D4844F4008422B6 /* GooglePlusShare.h */,
+				B3EEE48D1D4844E7008422B6 /* GooglePlusShare.m */,
 			);
 			name = social;
 			sourceTree = "<group>";
