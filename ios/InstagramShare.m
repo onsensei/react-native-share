@@ -9,6 +9,12 @@
 #import <AVFoundation/AVFoundation.h>
 
 @implementation InstagramShare
+
++ (BOOL)requiresMainQueueSetup
+{
+    return NO;
+}
+
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
     successCallback:(RCTResponseSenderBlock)successCallback {

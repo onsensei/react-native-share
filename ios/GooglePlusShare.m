@@ -9,6 +9,12 @@
 #import "GooglePlusShare.h"
 
 @implementation GooglePlusShare
+
++ (BOOL)requiresMainQueueSetup
+{
+    return NO;
+}
+
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
     successCallback:(RCTResponseSenderBlock)successCallback {
@@ -28,6 +34,5 @@
         }
     }
 }
-
 
 @end
