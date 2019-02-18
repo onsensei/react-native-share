@@ -5,9 +5,6 @@ import android.content.ActivityNotFoundException;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReadableMap;
 
-/**
- * Created by wcchimiiz on 05-06-18.
- */
 public class LineShare extends SingleShareIntent {
 
     private static final String PACKAGE = "jp.naver.line.android";

@@ -1,10 +1,10 @@
 {
-  "name": "wcchimiiz-react-native-social-share",
-  "version": "0.1.3",
+  "name": "onsensei-react-native-social-share",
+  "version": "0.1.4",
   "description": "Use the iOS native Twitter and Facebook share view from react native",
   "author": {
-    "name": "Wiwat Patanaprasitchai",
-    "email": "wc.chimiiz@gmail.com"
+    "name": "Thanaphat Suwannikornkul",
+    "email": "onsensei@hotmail.com"
   },
   "keywords": [
     "react",
@@ -21,18 +21,18 @@
     "react native facebook",
     "react native twitter"
   ],
-  "homepage": "https://github.com/WCChimiiz/react-native-share",
+  "homepage": "https://github.com/onsensei/react-native-share",
   "bugs": {
-    "url": "https://github.com/WCChimiiz/react-native-share/issues"
+    "url": "https://github.com/onsensei/react-native-share/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WCChimiiz/react-native-share.git"
+    "url": "git+https://github.com/onsensei/react-native-share.git"
   },
   "scripts": {},
   "_npmUser": {
-    "name": "wcchimiiz",
-    "email": "wc.chimiiz@gmail.com"
+    "name": "onsensei",
+    "email": "onsensei@hotmail.com"
   },
   "license": "MIT",
   "main": "index.js"
