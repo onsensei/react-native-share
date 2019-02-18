@@ -10,17 +10,13 @@
 
 @implementation LineShare
 
-+ (BOOL)requiresMainQueueSetup
-{
-    return NO;
-}
-
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
-    successCallback:(RCTResponseSenderBlock)successCallback {
-    
+    successCallback:(RCTResponseSenderBlock)successCallback
+{
     NSLog(@"Try open view");
-    if ([options objectForKey:@"message"] && [options objectForKey:@"message"] != [NSNull null]) {
+    if ([options objectForKey:@"message"] && [options objectForKey:@"message"] != [NSNull null])
+    {
         NSLog(@"Try open view");
         NSString *message = [RCTConvert NSString:options[@"message"]];
         message = [message stringByAppendingString: [@" " stringByAppendingString: options[@"url"]] ];
@@ -31,10 +27,13 @@
         NSString* webStringURL = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSURL* url = [NSURL URLWithString:webStringURL];
         
-        if ([[UIApplication sharedApplication] canOpenURL: url]) {
+        if ([[UIApplication sharedApplication] canOpenURL: url])
+        {
             [[UIApplication sharedApplication] openURL: url];
             successCallback(@[]);
-        } else {
+        }
+        else
+        {
             // Cannot open email
             NSString *errorMessage = @"Not installed";
             NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedString(errorMessage, nil)};
@@ -43,7 +42,6 @@
             failureCallback(error);
         }
     }
-    
 }
 
 @end

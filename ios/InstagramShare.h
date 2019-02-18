@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 // import RCTConvert
 #if __has_include(<React/RCTConvert.h>)
 #import <React/RCTConvert.h>
@@ -46,7 +47,9 @@
 #else
 #import "React/RCTUtils.h"   // Required when used as a Pod in a Swift project
 #endif
-@interface InstagramShare : NSObject <RCTBridgeModule>
+
+@interface InstagramShare:NSObject
 
 - (void *) shareSingle:(NSDictionary *)options failureCallback:(RCTResponseErrorBlock)failureCallback successCallback:(RCTResponseSenderBlock)successCallback;
+
 @end

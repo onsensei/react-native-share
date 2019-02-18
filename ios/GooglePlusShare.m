@@ -10,25 +10,24 @@
 
 @implementation GooglePlusShare
 
-+ (BOOL)requiresMainQueueSetup
-{
-    return NO;
-}
-
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
-    successCallback:(RCTResponseSenderBlock)successCallback {
-
+    successCallback:(RCTResponseSenderBlock)successCallback
+{
     NSLog(@"Try open view");
 
-    if ([options objectForKey:@"url"] && [options objectForKey:@"url"] != [NSNull null]) {
+    if ([options objectForKey:@"url"] && [options objectForKey:@"url"] != [NSNull null])
+    {
         NSString *url = [NSString stringWithFormat:@"https://plus.google.com/share?url=%@", options[@"url"]];
         NSURL *gplusURL = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 
-        if ([[UIApplication sharedApplication] canOpenURL: gplusURL]) {
+        if ([[UIApplication sharedApplication] canOpenURL: gplusURL])
+        {
             [[UIApplication sharedApplication] openURL:gplusURL];
             successCallback(@[]);
-        } else {
+        }
+        else
+        {
             // Cannot open gplus
             NSLog(@"error web intent");
         }

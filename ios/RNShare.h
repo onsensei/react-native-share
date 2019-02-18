@@ -1,4 +1,5 @@
 @import UIKit;
+
 // import RCTBridgeModule
 #if __has_include(<React/RCTBridgeModule.h>)
 #import <React/RCTBridgeModule.h>
@@ -8,6 +9,6 @@
 #import "React/RCTBridgeModule.h"   // Required when used as a Pod in a Swift project
 #endif
 
-@interface RNShare : NSObject <RCTBridgeModule>
+@interface RNShare:NSObject<RCTBridgeModule>
 
 @end
