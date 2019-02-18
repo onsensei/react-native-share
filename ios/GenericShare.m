@@ -9,6 +9,12 @@
 #import "GenericShare.h"
 
 @implementation GenericShare
+
++ (BOOL)requiresMainQueueSetup
+{
+    return NO;
+}
+
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
     successCallback:(RCTResponseSenderBlock)successCallback
