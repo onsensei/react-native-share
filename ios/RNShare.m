@@ -1,5 +1,6 @@
-#import <MessageUI/MessageUI.h>
 #import "RNShare.h"
+#import <MessageUI/MessageUI.h>
+
 // import RCTConvert
 #if __has_include(<React/RCTConvert.h>)
 #import <React/RCTConvert.h>
@@ -40,6 +41,7 @@
 #else
 #import "React/RCTUIManager.h"   // Required when used as a Pod in a Swift project
 #endif
+
 #import "GenericShare.h"
 #import "WhatsAppShare.h"
 #import "InstagramShare.h"
