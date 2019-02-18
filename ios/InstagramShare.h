@@ -46,7 +46,9 @@
 #else
 #import "React/RCTUtils.h"   // Required when used as a Pod in a Swift project
 #endif
+
 @interface InstagramShare : NSObject <RCTBridgeModule>
 
 - (void *) shareSingle:(NSDictionary *)options failureCallback:(RCTResponseErrorBlock)failureCallback successCallback:(RCTResponseSenderBlock)successCallback;
+
 @end

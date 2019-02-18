@@ -10,15 +10,10 @@
 
 @implementation InstagramShare
 
-+ (BOOL)requiresMainQueueSetup
-{
-    return NO;
-}
-
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
-    successCallback:(RCTResponseSenderBlock)successCallback {
-    
+    successCallback:(RCTResponseSenderBlock)successCallback
+{
     NSLog(@"Try open view");
 
     NSURL * fileURL = [NSURL URLWithString: options[@"url"]];
@@ -30,17 +25,23 @@
         
     NSURL * shareURL;
     // Instagram doesn't allow sharing videos longer than 60 seconds on iOS anymore. (next button is not responding, trim is unavailable)
-    if (videoDurationSeconds <= 60.0f) {
+    if (videoDurationSeconds <= 60.0f)
+    {
         NSString * urlString = [NSString stringWithFormat:@"instagram://library?AssetPath=%@", options[@"url"]];
         shareURL = [NSURL URLWithString:urlString];
-    } else {
+    }
+    else
+    {
         shareURL = [NSURL URLWithString:@"instagram://camera"];
     }
     
-    if ([[UIApplication sharedApplication] canOpenURL: shareURL]) {
+    if ([[UIApplication sharedApplication] canOpenURL: shareURL])
+    {
         [[UIApplication sharedApplication] openURL: shareURL];
         successCallback(@[]);
-    } else {
+    }
+    else
+    {
         // Cannot open instagram
         NSString *stringURL = @"http://itunes.apple.com/app/instagram/id389801252";
         NSURL *url = [NSURL URLWithString:stringURL];

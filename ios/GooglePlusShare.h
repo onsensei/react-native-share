@@ -5,6 +5,7 @@
 //  Created by Diseño Uno BBCL on 23-07-16.
 //  Copyright © 2016 Facebook. All rights reserved.
 //
+
 #import <UIKit/UIKit.h>
 // import RCTConvert
 #if __has_include(<React/RCTConvert.h>)
@@ -46,7 +47,9 @@
 #else
 #import "React/RCTUtils.h"   // Required when used as a Pod in a Swift project
 #endif
+
 @interface GooglePlusShare : NSObject <RCTBridgeModule>
 
 - (void *) shareSingle:(NSDictionary *)options failureCallback:(RCTResponseErrorBlock)failureCallback successCallback:(RCTResponseSenderBlock)successCallback;
+
 @end

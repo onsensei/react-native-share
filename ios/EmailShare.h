@@ -6,7 +6,6 @@
 //  Copyright © 2016 Facebook. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 // import RCTConvert
 #if __has_include(<React/RCTConvert.h>)
@@ -49,7 +48,9 @@
 #import "React/RCTUtils.h"   // Required when used as a Pod in a Swift project
 #endif
 #import <MessageUI/MessageUI.h>
+
 @interface EmailShare : NSObject <MFMailComposeViewControllerDelegate>
 
 - (void *) shareSingle:(NSDictionary *)options failureCallback:(RCTResponseErrorBlock)failureCallback successCallback:(RCTResponseSenderBlock)successCallback;
+
 @end
